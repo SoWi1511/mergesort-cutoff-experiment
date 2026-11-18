@@ -7,7 +7,7 @@ Dự án thực nghiệm phân tích hiệu năng thuật toán theo **Chủ đ�
 
 ---
 
-## 1. Cấu trúc trọn bộ sản phẩm nộp (4 thành phần theo yêu cầu đề bài)
+## 1. Cấu trúc thư mục dự án
 
 ```text
 mergesort-cutoff-experiment/
@@ -34,19 +34,15 @@ mergesort-cutoff-experiment/
 │   ├── reverse_sorted_N200000.txt                  # Mảng sắp xếp ngược giảm dần (Worst-case Insertion Sort)
 │   └── few_unique_N200000.txt                      # Mảng nhiều khóa trùng lặp (50 giá trị phân biệt)
 │
-├── results/                                        # SỐ LIỆU ĐO THỰC TẾ & ĐỒ THỊ KHOA HỌC
-│   ├── raw_measurements.csv                        # Toàn bộ dữ liệu thô từng lượt chạy (nano giây & mili giây)
-│   ├── summary_statistics.csv                      # Bảng tổng hợp thống kê chi tiết cho từng bộ dữ liệu
-│   ├── multiscale_normalized_summary.csv           # Bảng chuẩn hóa đa quy mô [100k..1M]
-│   ├── cost_model_counts.csv                       # Số liệu đếm phép toán theo Mô hình Chi phí
-│   ├── primitive_vs_comparable.csv                 # Dữ liệu đo thô đối chứng Comparable[] vs int[]
-│   ├── primitive_vs_comparable_summary.csv         # Bảng tổng hợp thống kê đối chứng Comparable[] vs int[]
-│   ├── key_findings.json                           # Tóm tắt các mốc thống kê & kiểm định t bắt cặp
-│   └── figures/                                    # 6 đồ thị phân tích độ phân giải cao (300 DPI PNG)
-│
-└── ai_chat_log/                                    # [4] LOG CHAT VỚI AI
-    ├── Log_Chat_Voi_AI.pdf                         # Bản PDF nhật ký thảo luận phương pháp & thiết kế script với AI
-    └── Log_Chat_Voi_AI.md                          # Bản Markdown nhật ký trao đổi với AI
+└── results/                                        # SỐ LIỆU ĐO THỰC TẾ & ĐỒ THỊ KHOA HỌC
+    ├── raw_measurements.csv                        # Toàn bộ dữ liệu thô từng lượt chạy (nano giây & mili giây)
+    ├── summary_statistics.csv                      # Bảng tổng hợp thống kê chi tiết cho từng bộ dữ liệu
+    ├── multiscale_normalized_summary.csv           # Bảng chuẩn hóa đa quy mô [100k..1M]
+    ├── cost_model_counts.csv                       # Số liệu đếm phép toán theo Mô hình Chi phí
+    ├── primitive_vs_comparable.csv                 # Dữ liệu đo thô đối chứng Comparable[] vs int[]
+    ├── primitive_vs_comparable_summary.csv         # Bảng tổng hợp thống kê đối chứng Comparable[] vs int[]
+    ├── key_findings.json                           # Tóm tắt các mốc thống kê & kiểm định t bắt cặp
+    └── figures/                                    # 6 đồ thị phân tích độ phân giải cao (300 DPI PNG)
 ```
 
 ---

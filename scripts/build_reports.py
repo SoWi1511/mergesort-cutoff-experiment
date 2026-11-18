@@ -838,11 +838,12 @@ def main():
     print("Đã xuất:", report_pdf)
     print("Đã xuất:", report_docx)
 
-    # 2. Xuất Log chat với AI (.pdf)
-    chat_blocks = parse_markdown_blocks(chat_md.read_text(encoding="utf-8"))
-    chat_html = blocks_to_html(chat_blocks, chat_md.parent, "Log trao đổi với AI - Thí nghiệm Mergesort CUTOFF")
-    render_html_to_pdf(chat_html, chat_pdf)
-    print("Đã xuất:", chat_pdf)
+    # 2. Xuất Log chat với AI (.pdf) nếu có
+    if chat_md.exists():
+        chat_blocks = parse_markdown_blocks(chat_md.read_text(encoding="utf-8"))
+        chat_html = blocks_to_html(chat_blocks, chat_md.parent, "Log trao đổi với AI - Thí nghiệm Mergesort CUTOFF")
+        render_html_to_pdf(chat_html, chat_pdf)
+        print("Đã xuất:", chat_pdf)
 
 
 if __name__ == "__main__":
