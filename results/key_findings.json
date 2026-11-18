@@ -1,0 +1,219 @@
+{
+  "best_cutoff_multiscale": 24,
+  "best_cutoff_n1m": 18,
+  "optimal_plateau_within_1_5pct": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    36,
+    40,
+    44
+  ],
+  "baseline_0": {
+    "cutoff": 0,
+    "n1m_mean_ms": 258.22194733333333,
+    "n1m_sd_ms": 14.44580883507618,
+    "n1m_ci95_ms": 7.999822285839876,
+    "n1m_improvement_pct": 0.0,
+    "multiscale_rel_pct": 100.0,
+    "multiscale_improvement_pct": 0.0,
+    "multiscale_speedup": 1.0
+  },
+  "baseline_1": {
+    "cutoff": 1,
+    "n1m_mean_ms": 267.0861917333333,
+    "n1m_sd_ms": 11.837197985882586,
+    "n1m_ci95_ms": 6.555221748430609,
+    "n1m_improvement_pct": -3.4328005390484075,
+    "multiscale_rel_pct": 101.02940849574156,
+    "multiscale_improvement_pct": -1.0294084957415595,
+    "multiscale_speedup": 0.9898993055899084
+  },
+  "textbook_old_7": {
+    "cutoff": 7,
+    "n1m_mean_ms": 241.79669986666661,
+    "n1m_sd_ms": 11.762440938462099,
+    "n1m_ci95_ms": 6.513822675467253,
+    "n1m_improvement_pct": 6.36090295046211,
+    "multiscale_rel_pct": 93.38683679076154,
+    "multiscale_improvement_pct": 6.613163209238463,
+    "multiscale_speedup": 1.0709445372020991
+  },
+  "textbook_new_10": {
+    "cutoff": 10,
+    "n1m_mean_ms": 232.24441659999997,
+    "n1m_sd_ms": 14.969784509041506,
+    "n1m_ci95_ms": 8.289990342310885,
+    "n1m_improvement_pct": 10.060156002076583,
+    "multiscale_rel_pct": 92.07153959247063,
+    "multiscale_improvement_pct": 7.92846040752937,
+    "multiscale_speedup": 1.0862607446664103
+  },
+  "optimal_multiscale": {
+    "cutoff": 24,
+    "n1m_mean_ms": 235.7359166666667,
+    "n1m_sd_ms": 21.496275651811008,
+    "n1m_ci95_ms": 11.904240668363236,
+    "n1m_improvement_pct": 8.70802458849088,
+    "multiscale_rel_pct": 90.09897377044436,
+    "multiscale_improvement_pct": 9.901026229555637,
+    "multiscale_speedup": 1.1100686131747122
+  },
+  "optimal_n1m": {
+    "cutoff": 18,
+    "n1m_mean_ms": 229.90801659999997,
+    "n1m_sd_ms": 15.399389223327338,
+    "n1m_ci95_ms": 8.527897503251626,
+    "n1m_improvement_pct": 10.964959030683593,
+    "multiscale_rel_pct": 90.46629432370311,
+    "multiscale_improvement_pct": 9.533705676296885,
+    "multiscale_speedup": 1.1057498920991717
+  },
+  "paired_tests_multiscale": {
+    "7_vs_10": {
+      "t_stat": 2.1622574998984008,
+      "p_value": 0.06256891706481468
+    },
+    "7_vs_opt": {
+      "t_stat": 6.768091539716346,
+      "p_value": 0.00014239013578884314
+    },
+    "10_vs_opt": {
+      "t_stat": 3.2706883029206026,
+      "p_value": 0.011344537506449185
+    }
+  },
+  "per_dataset_best": {
+    "few_unique_N200000.txt": {
+      "n": 200000,
+      "category": "few_unique",
+      "best_cutoff": 35,
+      "best_mean_ms": 15.58099595238095,
+      "baseline_mean_ms": 19.23969842857143,
+      "max_improvement_pct": 19.01642320316838
+    },
+    "nearly_sorted_N200000.txt": {
+      "n": 200000,
+      "category": "nearly_sorted",
+      "best_cutoff": 128,
+      "best_mean_ms": 11.617583285714286,
+      "baseline_mean_ms": 17.281839238095237,
+      "max_improvement_pct": 32.77577041623523
+    },
+    "random_N10000.txt": {
+      "n": 10000,
+      "category": "uniform_random",
+      "best_cutoff": 33,
+      "best_mean_ms": 0.6245568666666668,
+      "baseline_mean_ms": 0.8020833333333335,
+      "max_improvement_pct": 22.133169870129873
+    },
+    "random_N100000.txt": {
+      "n": 100000,
+      "category": "uniform_random",
+      "best_cutoff": 44,
+      "best_mean_ms": 11.542329428571428,
+      "baseline_mean_ms": 13.150644952380953,
+      "max_improvement_pct": 12.229936475612444
+    },
+    "random_N1000000.txt": {
+      "n": 1000000,
+      "category": "uniform_random",
+      "best_cutoff": 18,
+      "best_mean_ms": 229.90801659999997,
+      "baseline_mean_ms": 258.22194733333333,
+      "max_improvement_pct": 10.964959030683593
+    },
+    "random_N140000.txt": {
+      "n": 140000,
+      "category": "uniform_random",
+      "best_cutoff": 27,
+      "best_mean_ms": 16.73808333333333,
+      "baseline_mean_ms": 19.09847,
+      "max_improvement_pct": 12.359035392189377
+    },
+    "random_N180000.txt": {
+      "n": 180000,
+      "category": "uniform_random",
+      "best_cutoff": 29,
+      "best_mean_ms": 22.156446571428575,
+      "baseline_mean_ms": 25.15753561904762,
+      "max_improvement_pct": 11.929185326669362
+    },
+    "random_N220000.txt": {
+      "n": 220000,
+      "category": "uniform_random",
+      "best_cutoff": 32,
+      "best_mean_ms": 29.438781714285717,
+      "baseline_mean_ms": 32.78116476190477,
+      "max_improvement_pct": 10.196047248154096
+    },
+    "random_N262144_pow2.txt": {
+      "n": 262144,
+      "category": "uniform_random",
+      "best_cutoff": 31,
+      "best_mean_ms": 36.127524470588234,
+      "baseline_mean_ms": 39.978585823529414,
+      "max_improvement_pct": 9.632810349871445
+    },
+    "random_N310000.txt": {
+      "n": 310000,
+      "category": "uniform_random",
+      "best_cutoff": 21,
+      "best_mean_ms": 45.09543864705883,
+      "baseline_mean_ms": 49.92312735294117,
+      "max_improvement_pct": 9.670244958317753
+    },
+    "random_N380000.txt": {
+      "n": 380000,
+      "category": "uniform_random",
+      "best_cutoff": 33,
+      "best_mean_ms": 55.14121811764705,
+      "baseline_mean_ms": 60.96776235294117,
+      "max_improvement_pct": 9.556762476477934
+    },
+    "random_N50000.txt": {
+      "n": 50000,
+      "category": "uniform_random",
+      "best_cutoff": 25,
+      "best_mean_ms": 5.1385097,
+      "baseline_mean_ms": 6.020883266666668,
+      "max_improvement_pct": 14.65521797361095
+    },
+    "random_N500000.txt": {
+      "n": 500000,
+      "category": "uniform_random",
+      "best_cutoff": 28,
+      "best_mean_ms": 75.8607794117647,
+      "baseline_mean_ms": 84.39479176470589,
+      "max_improvement_pct": 10.112013045466314
+    },
+    "reverse_sorted_N200000.txt": {
+      "n": 200000,
+      "category": "reverse_sorted",
+      "best_cutoff": 8,
+      "best_mean_ms": 16.489262000000004,
+      "baseline_mean_ms": 18.426795619047624,
+      "max_improvement_pct": 10.514761541311112
+    }
+  }
+}
